@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html　lang="ja">
+    <!-- phan dau-->
+    <head>
+        <title>わたしのLongTechストーリー</title>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="main.css">
+        <style>
+            body{
+                background-image: url(https://cdn.pixabay.com/photo/2019/12/16/04/17/social-media-4698431_960_720.jpg);
+                background-size: cover;
+                background-repeat: repeat;
+                background-position: center;
+            }
+            .box{
+                width: 100%;
+                height: 100px;
+                background-color: black;
+                position: relative;
+            }
+            .box2{
+                width: 50px;
+                height: 50px;
+                background-color: aliceblue;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .box1  {
+                width: 30px;
+                height: 25px;
+                background-color: red;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            .container{
+                max-width: 800px;
+                padding: 30px;
+                margin: 30px auto 10px auto;
+                background-color: #ffff;
+                
+            }
+            .row{
+                padding: 8px 0;
+                display: flex;
+            }
+            .label{
+                min-width: 90px;
+            }
+            .input{
+                
+            }
+            .column-cot{ 
+                display: flex;   
+                margin-top: 20px;
+                flex-direction: column;  
+                justify-content: space-around       
+            }
+            /*khi keo nho lai thi thanh hinh ngang con keo ra thi hinh doc*/
+            @media (min-width: 740px){  
+                .column-cot {
+                    flex-direction: row;
+                }
+            }
+            
+         .item{
+            padding: 12px 16px;
+            margin-top: 15px;
+            flex-basis: 30%;
+         }
+         .item:nth-child(1){
+            background-color: red;
+            order: 3;/*so nho hon thi dung dau*/
+            
+            
+         }
+         .item:nth-child(2){
+            background-color: black;
+            order: 1;
+         }
+         .item:nth-child(3){
+            background-color: blueviolet;
+            order: 2;
+         }
+         .wrapxuongdong{
+            height: 300px;
+            display: flex;
+            background-color: aliceblue;
+            justify-content: space-around;/*can trai phai giua*/
+            margin-top: 30px;/*align-items can tren giua duoi*/
+            padding: 12px;
+            flex-wrap: wrap;
+            align-items: baseline;
+           
+
+         }
+         .wrapxuongdong_item{
+            width: 150px;
+            height: 100px;
+            color: aliceblue;
+            text-align: center;
+            line-height: 100px;/*vi tri so o trong hop*/
+            font-size: 40px;
+            font-weight: 900;
+            margin-top: 10px;
+            background-color: red;
+            
+            
+                   
+           
+         }
+
+        </style>    
+    </head>
+    <!--phan than-->
+
+    <body>
+        <h1>ITIT</h1>
+        <nav>
+            <a href="index.html">ようこそ</a>
+            <a href="about.html">IT業界</a>
+            <a href="contact.html  ">将来的には</a>
+        </nav>
+        <div class="box">
+            <div>
+                <div class="box2">
+                    <div class="box1"></div>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+         <form action="" class="form">
+            <div class="row">
+                <label class="label" for="name">Name :</label>
+                <input class="input" type="text" id="Name">
+            </div>
+            <div class="row">
+                <label class="label" for="password">Password :</label>
+                <input class="input" type="password" id="Password">
+            </div>
+         </form>
+    </div>
+    <div>
+        <div class="column-cot">
+            <div class="item">
+                <h2>flexx-direction</h2>
+                <p>display flex inline flexf lex direction flex wrap no wrap wrap wrap reverse</p>
+            </div>
+            <div class="item">
+                <h2>flex-basiss</h2>
+                <p>justify-contentt self align content flex grow flex shrink </p>
+            </div>
+            <div class="item">
+                <h2>order</h2>
+                <p>dung de thay doi thu tu hien thi cua cac phan tu con flex items ben trong mot flex container</p>
+            </div>
+
+        </div>
+    </div>
+        <div class="wrapxuongdong">
+          <div class="wrapxuongdong_item">1</div>          
+          <div class="wrapxuongdong_item">2</div>
+          <div class="wrapxuongdong_item">3</div>
+          <div class="wrapxuongdong_item">4</div>
+          <div class="wrapxuongdong_item">5</div>
+        </div>
+         <div>
+            <div class="bieudo">
+                <div class="bieudo_hinhcot" style="--saocungdk: 10%">10%</div>
+                <div class="bieudo_hinhcot" style="--saocungdk: 40%">40%</div>
+                <div class="bieudo_hinhcot" style="--saocungdk: 80%">80%</div>
+                <div class="bieudo_hinhcot" style="--saocungdk: 30%">30%</div>
+                <div class="bieudo_hinhcot" style="--saocungdk: 90%">90%</div>
+                <div class="bieudo_hinhcot" style="--saocungdk: 20%">20%</div>
+            </div>
+         </div>
+         <div>
+         <div class="dacnhan">
+            <div class="dacnhan1">Trong đời thực tế, họ tầm thường Bao nhiêu, tự thấy mình hèn hạ bao nhiêu, thì
+                trong thế giới tưởng tượng Của họ, họ càng thấy oai quyền và danh vọng của họ lớn lao
+                bấy nhiêu. Những kẻ đó sướng hơn chúng ta nhiều lắm. Họ đã kiếm được trong thế
+                Giới thần tiên của họ cách thỏa mãn lòng khao khát danh vọng của họ. Họ đã ký một
+                tấm chi phiếu một triệu đồng, hoặc viết một bức thư Tiến dẫn ta với hoàng đế Ba Tư rồi
+                hãnh diện đưa cho ta. </div>
+                <div class="tam">
+                    <div class="tam1">Đã có những người khát khao danh vọng mà hóa điên như vậy, thì sự biết Khen tài
+                        năng của những người ở chung quanh ta tất phải là một phép Mầu nhiệm vô cùng.
+                        Tôi mới biết có Một người mỗi năm lãnh lương một triệu đồng. Mà ông chủ người đó
+                        Lại có tiếng là keo cú nữa.</div>
+                        <div class="tam2">Nhưng ông có một tài hiếm có: tài chỉ huy, dẫn đạo. Ông biết cho người Ta cái mà
+                            người ta khát khao nhất: lời khen và lời khuyến khích.
+                            Bí quyết của ông đây. Tôi xin chép đúng lời ông và mong rằng những Lời vàng ngọc
+                            đó được khắc lên bảng đồng, treo trong mỗi nhà, mỗi Trường học, mỗi cửa hàng, mỗi
+                            công sở. Học thuộc câu đó càng ích Lợi cả ngàn lần hơn thuộc những công thức hóa
+                            học hay là mực trung Bình mưa mỗi năm ở Guatemala.</a>
+                        </div>
+
+                </div>
+                </div>
+                </div>
+         <div > 
+            <button class="block block--ok ">GO TO NEXT AOOROVAL</button>
+            <button  class="block block--cahbao">OK</button>
+            <button  class="block block--kdk block--disabled">TRY AGAIN</button>
+         </div>
+         <div>
+            <div class="toast">
+                <div class="toast__icon">
+                    <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast__body">
+                <h3 class="toast__title">Success</h3>
+                <p class="toast__msg">may tinh ket noi</p>
+            </div>
+            <div class="toast__close">
+                <i class="fa-solid fa-circle-xmark"></i>
+
+            </div>
+        </div>
+        </div>
+
+
+   
+        </body>
+</html>
